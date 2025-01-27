@@ -1,0 +1,16 @@
+# config/settings.yaml
+data:
+  root_dir: data/
+  versions:
+    v1:
+      train_split: 0.8
+      img_size: 224
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+  train:
+    batch_size: 32
+    shuffle: true
+    num_workers: 4
+  validation:
+    batch_size: 16
+    shuffle: false
